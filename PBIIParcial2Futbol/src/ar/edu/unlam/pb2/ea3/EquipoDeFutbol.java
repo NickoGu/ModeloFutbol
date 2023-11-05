@@ -59,9 +59,12 @@ public class EquipoDeFutbol {
 
 		return null;
 	}
-
+	
+	
 	public TreeSet<Jugador> devolverPlanteOrdenadoPorPrecioDeCompraDeJugador() {
-		return null;
+		TreeSet<Jugador> jugadoresOrdenadosPorPrecio = new TreeSet<>(new JugadoresOrdenadosPorPrecio());
+		jugadoresOrdenadosPorPrecio.addAll(jugadores);
+		return jugadoresOrdenadosPorPrecio;
 	}
 
 	public TreeSet<Jugador> devolverPlanteOrdenadoPorNumeroDeCamisetaDeJugador() {
