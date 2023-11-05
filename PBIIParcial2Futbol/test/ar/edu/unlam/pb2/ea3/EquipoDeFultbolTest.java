@@ -30,22 +30,22 @@ public class EquipoDeFultbolTest {
 		
 	}
 	
-//	@Test (expected = JugadorDuplicadoException.class)
-//	public void queAlIntentarAgregarUnJugadorExistenetLanceExcepcion() throws CapacidadMaximaException, JugadorDuplicadoException{
-//		
-//		EquipoDeFutbol barcelona = new EquipoDeFutbol("Barcelona");
-//		Jugador laPulga = new Jugador(10, "Lionel Messi", 999999999);
-//		
-//		barcelona.agregarJugador(laPulga);
-//		
-//		assertTrue(barcelona.getJugadores().contains(laPulga));
-//		
-//		Jugador elMejor = new Jugador(1, "Lionel Messi", 1);
-//		barcelona.agregarJugador(elMejor);
-//		
-//		assertTrue(false);
-//	}
-//	
+	@Test (expected = JugadorDuplicadoException.class)
+	public void queAlIntentarAgregarUnJugadorExistenetLanceExcepcion() throws CapacidadMaximaException, JugadorDuplicadoException{
+		
+		EquipoDeFutbol barcelona = new EquipoDeFutbol("Barcelona");
+		Jugador laPulga = new Jugador(10, "Lionel Messi", 999999999);
+		
+		barcelona.agregarJugador(laPulga);
+		
+		assertTrue(barcelona.getJugadores().contains(laPulga));
+		
+		Jugador elMejor = new Jugador(1, "Lionel Messi", 1);
+		barcelona.agregarJugador(elMejor);
+		
+		assertTrue(false);
+	}
+	
 //	@Test (expected = CapacidadMaximaException.class)
 //	public void queAlIntentarAgregarCantidadExcesivaDeJugadoresLanceExcepcion() throws CapacidadMaximaException, JugadorDuplicadoException{
 //		
