@@ -42,8 +42,17 @@ public class EquipoDeFutbol {
 	 * presente en el equipo generar� una excepci�n (JugadoreInexistenteException).
 	 */
 	public Boolean cambiarJugador(Jugador saliente, Jugador entrante) throws JugadoreInexistenteException {
+		Boolean cambio = false;
+		
+		if(jugadores.contains(saliente)) {
+			jugadores.remove(saliente);
+			jugadores.add(entrante);
+			cambio = true;
+		} else {
+			throw new JugadoreInexistenteException();
+		}
 
-		return false;
+		return cambio;
 	}
 
 	public TreeSet<Jugador> devolverPlanteOrdenadoPorNombreDeJugador() {
