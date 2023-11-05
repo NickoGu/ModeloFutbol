@@ -25,7 +25,7 @@ public class EquipoDeFutbol {
 	 */
 	public void agregarJugador(Jugador jugador) throws CapacidadMaximaException, JugadorDuplicadoException {
 
-		if (jugadores.size() <= 23) {
+		if (jugadores.size() <= 22) {
 			if (jugadores.contains(jugador) == false) {
 				jugadores.add(jugador);
 			} else {
