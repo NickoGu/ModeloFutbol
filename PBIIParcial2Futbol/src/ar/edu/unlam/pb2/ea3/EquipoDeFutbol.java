@@ -15,7 +15,7 @@ public class EquipoDeFutbol {
 
 	public EquipoDeFutbol(String nombreEquipo) {
 		this.nombre = nombreEquipo;
-		this.jugadores = new HashSet<Jugador>();
+		this.jugadores = new TreeSet<Jugador>();
 	}
 
 	/*
