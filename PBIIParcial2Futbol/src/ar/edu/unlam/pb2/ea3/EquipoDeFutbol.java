@@ -10,6 +10,15 @@ import java.util.TreeSet;
 
 public class EquipoDeFutbol {
 
+	String nombre;
+	Set<Jugador> jugadores;
+	
+	
+	public EquipoDeFutbol(String nombreEquipo) {
+		this.nombre = nombreEquipo;
+		this.jugadores = new HashSet<Jugador>();
+	}
+
 	/*
 	 * La capacidad m�xima de un equipo es 23. Cualquier intento de agregar m�s
 	 * jugadores generar� una excepci�n (CapacidadMaximaException). Adem�s, no
@@ -42,4 +51,25 @@ public class EquipoDeFutbol {
 		return null;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Set<Jugador> getJugadores() {
+		return jugadores;
+	}
+
+	public void setJugadores(Set<Jugador> jugadores) {
+		this.jugadores = jugadores;
+	}
+
+	
+	
+	
+	
+	
 }
