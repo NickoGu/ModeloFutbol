@@ -68,7 +68,9 @@ public class EquipoDeFutbol {
 	}
 
 	public TreeSet<Jugador> devolverPlanteOrdenadoPorNumeroDeCamisetaDeJugador() {
-		return null;
+		TreeSet<Jugador> jugadoresOrdenadosPorCamiseta = new TreeSet<>(new JugadoresOrdenadosPorCamiseta());
+		jugadoresOrdenadosPorCamiseta.addAll(jugadores);
+		return jugadoresOrdenadosPorCamiseta;
 	}
 
 	public String getNombre() {

@@ -241,46 +241,46 @@ public class EquipoDeFultbolTest {
 		assertEquals("Lionel Messi", ultimo.getNombre());
 	}
 	
-//	@Test
-//	public void queElEquipoPresenteLosJugadoresOrdenadosPorNumeroDeCamiseta() throws CapacidadMaximaException, JugadorDuplicadoException, JugadoreInexistenteException{
-//EquipoDeFutbol argentina = new EquipoDeFutbol("Argentina");
-//		
-//		argentina.agregarJugador(new Jugador(1, "Sergio Romero", 10000));
-//		argentina.agregarJugador(new Jugador(2, "Ezequiel Garay", 10001));
-//		argentina.agregarJugador(new Jugador(3, "Hugo Campagnaro", 10002));
-//		argentina.agregarJugador(new Jugador(4, "Pablo Zabaleta", 10003));
-//		argentina.agregarJugador(new Jugador(5, "Fernando Gago", 10004));
-//		argentina.agregarJugador(new Jugador(6, "Lucas Biglia", 10005));
-//		argentina.agregarJugador(new Jugador(7, "Angel Di Mar�a", 90000000));
-//		argentina.agregarJugador(new Jugador(8, "Enzo P�rez", 199000000));
-//		argentina.agregarJugador(new Jugador(9, "Gonzalo Higua�n", 150000000));
-//		argentina.agregarJugador(new Jugador(10, "Lionel Messi", 200000000));
-//		argentina.agregarJugador(new Jugador(11, "Maximiliano Rodr�guez", 10006));
-//		argentina.agregarJugador(new Jugador(12, "Agust�n Orion", 10007));
-//		argentina.agregarJugador(new Jugador(13, "Augusto Fern�ndez", 10008));
-//		argentina.agregarJugador(new Jugador(14, "Javier Mascherano", 10009));
-//		argentina.agregarJugador(new Jugador(15, "Mart�n Demichelis", 10010));
-//		argentina.agregarJugador(new Jugador(16, "Marcos Rojo", 10011));
-//		argentina.agregarJugador(new Jugador(17, "Federico Fern�ndez", 10012));
-//		argentina.agregarJugador(new Jugador(18, "Rodrigo Palacio", 10013));
-//		argentina.agregarJugador(new Jugador(19, "Ricardo �lvarez", 10014));
-//		argentina.agregarJugador(new Jugador(20, "Sergio Ag�ero", 140000000));
-//		argentina.agregarJugador(new Jugador(21, "Mariano And�jar", 10015));
-//		argentina.agregarJugador(new Jugador(22, "Ezequiel Lavezzi", 10016));
-//		argentina.agregarJugador(new Jugador(23, "Jos� Basanta", 1));
-//		
-//		Iterator<Jugador> it = argentina.devolverPlanteOrdenadoPorNumeroDeCamisetaDeJugador().iterator();
-//		
-//		Jugador primero = it.next();
-//		
-//		assertEquals("Sergio Romero", primero.getNombre());
-//		
-//		Jugador ultimo;
-//		for(int i=0; i<21; i++) {
-//			it.next();
-//		}
-//		ultimo = (Jugador)it.next();
-//		
-//		assertEquals("Jos� Basanta", ultimo.getNombre());
-//	}
+	@Test
+	public void queElEquipoPresenteLosJugadoresOrdenadosPorNumeroDeCamiseta() throws CapacidadMaximaException, JugadorDuplicadoException, JugadoreInexistenteException{
+EquipoDeFutbol argentina = new EquipoDeFutbol("Argentina");
+		
+		argentina.agregarJugador(new Jugador(1, "Sergio Romero", 10000));
+		argentina.agregarJugador(new Jugador(2, "Ezequiel Garay", 10001));
+		argentina.agregarJugador(new Jugador(3, "Hugo Campagnaro", 10002));
+		argentina.agregarJugador(new Jugador(4, "Pablo Zabaleta", 10003));
+		argentina.agregarJugador(new Jugador(5, "Fernando Gago", 10004));
+		argentina.agregarJugador(new Jugador(6, "Lucas Biglia", 10005));
+		argentina.agregarJugador(new Jugador(7, "Angel Di Mar�a", 90000000));
+		argentina.agregarJugador(new Jugador(8, "Enzo P�rez", 199000000));
+		argentina.agregarJugador(new Jugador(9, "Gonzalo Higua�n", 150000000));
+		argentina.agregarJugador(new Jugador(10, "Lionel Messi", 200000000));
+		argentina.agregarJugador(new Jugador(11, "Maximiliano Rodr�guez", 10006));
+		argentina.agregarJugador(new Jugador(12, "Agust�n Orion", 10007));
+		argentina.agregarJugador(new Jugador(13, "Augusto Fern�ndez", 10008));
+		argentina.agregarJugador(new Jugador(14, "Javier Mascherano", 10009));
+		argentina.agregarJugador(new Jugador(15, "Mart�n Demichelis", 10010));
+		argentina.agregarJugador(new Jugador(16, "Marcos Rojo", 10011));
+		argentina.agregarJugador(new Jugador(17, "Federico Fern�ndez", 10012));
+		argentina.agregarJugador(new Jugador(18, "Rodrigo Palacio", 10013));
+		argentina.agregarJugador(new Jugador(19, "Ricardo �lvarez", 10014));
+		argentina.agregarJugador(new Jugador(20, "Sergio Ag�ero", 140000000));
+		argentina.agregarJugador(new Jugador(21, "Mariano And�jar", 10015));
+		argentina.agregarJugador(new Jugador(22, "Ezequiel Lavezzi", 10016));
+		argentina.agregarJugador(new Jugador(23, "Jos� Basanta", 1));
+		
+		Iterator<Jugador> it = argentina.devolverPlanteOrdenadoPorNumeroDeCamisetaDeJugador().iterator();
+		
+		Jugador primero = it.next();
+		
+		assertEquals("Sergio Romero", primero.getNombre());
+		
+		Jugador ultimo;
+		for(int i=0; i<21; i++) {
+			it.next();
+		}
+		ultimo = (Jugador)it.next();
+		
+		assertEquals("Jos� Basanta", ultimo.getNombre());
+	}
 }
