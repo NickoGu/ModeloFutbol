@@ -12,8 +12,7 @@ public class EquipoDeFutbol {
 
 	String nombre;
 	Set<Jugador> jugadores;
-	
-	
+
 	public EquipoDeFutbol(String nombreEquipo) {
 		this.nombre = nombreEquipo;
 		this.jugadores = new HashSet<Jugador>();
@@ -25,21 +24,30 @@ public class EquipoDeFutbol {
 	 * deber� permitir duplicar Jugadores (JugadorDuplicadoException).
 	 */
 	public void agregarJugador(Jugador jugador) throws CapacidadMaximaException, JugadorDuplicadoException {
-		//test 
+
+		if (jugadores.size() <= 23) {
+			if (jugadores.contains(jugador) == false) {
+				jugadores.add(jugador);
+			} else {
+				throw new JugadorDuplicadoException();
+			}
+		} else {
+			throw new CapacidadMaximaException();
+		}
+
 	}
 
 	/*
 	 * Permite cambiar cualquier jugador. Un intento de cambiar un jugador no
-	 * presente en el equipo generar� una excepci�n
-	 * (JugadoreInexistenteException).
+	 * presente en el equipo generar� una excepci�n (JugadoreInexistenteException).
 	 */
-	public Boolean cambiarJugador(Jugador saliente, Jugador entrante) throws JugadoreInexistenteException{
-		
+	public Boolean cambiarJugador(Jugador saliente, Jugador entrante) throws JugadoreInexistenteException {
+
 		return false;
 	}
 
 	public TreeSet<Jugador> devolverPlanteOrdenadoPorNombreDeJugador() {
-		
+
 		return null;
 	}
 
@@ -67,9 +75,4 @@ public class EquipoDeFutbol {
 		this.jugadores = jugadores;
 	}
 
-	
-	
-	
-	
-	
 }
